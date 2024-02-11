@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#F4F4F2</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Kayıt Ol renkler -->
+    <color name="KayitOlTextColor">#000000</color>
+    <color name="KayitOlBtnTextColor">#FFFFFF</color>
+    <color name="colorAccent">#14B0F6</color>
+
+
+    <!-- Main activity renkler
+    <color name="BottomViewSecilenRenk">#EC5286</color>
+    <color name="BottomViewSecilmeyenRenk">#FFC4D8</color>
+    -->
+    <color name="BottomViewSecilenRenk">#14B0F6</color>
+    <color name="BottomViewSecilmeyenRenk">#88D6FA</color>
+
+    <!-- Custom Dialog Mesaj Gönder -->
+    <color name="MesajGonderCerceveRenk">#07C8E1</color>
+    <color name="MesajGonderBtnResimRenk">#FFFFFF</color>
+    <color name="MesajGonderBtnYaziRenk">#FFFFFF</color>
+
+    <!-- Chat BG Renkleri  4A4AE8-->
+    <color name="ChatBgLeftColor">#236A8A</color>
+    <color name="ChatBgRightColor">#236A8A</color>
+    <color name="ChatBgTextColor">#FFFFFF</color>
+
+</resources>

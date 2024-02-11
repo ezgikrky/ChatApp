@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ana_sayfa_3"
+    tools:context=".Activity.GirisSayfasi">
+
+
+  <!--
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/top_background" />
+-->
+    <LinearLayout
+        android:id="@+id/giris_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="20dp"
+
+
+        >
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="Giriş Sayfası"
+          android:textSize="27sp"
+          android:textStyle="italic"
+          android:textColor="#1E7197"/>
+
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/giris_email"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="75dp"
+          app:boxCornerRadiusBottomEnd="20dp"
+          app:boxCornerRadiusTopStart="20dp"
+          app:counterEnabled="true"
+          app:counterMaxLength="35"
+          app:counterTextAppearance="@style/CounterStyle"
+
+          >
+
+        <EditText
+            android:id="@+id/giris_editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mailinizi Giriniz"
+            android:inputType="textEmailAddress"
+            android:maxLength="35"
+            android:textColor="@color/KayitOlTextColor"
+            android:textSize="17sp"
+            android:textStyle="bold"
+
+
+            />
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/giris_sifre"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          app:boxCornerRadiusBottomEnd="20dp"
+          app:boxCornerRadiusTopStart="20dp"
+          app:counterEnabled="true"
+          app:counterMaxLength="20"
+          app:counterTextAppearance="@style/CounterStyle"
+
+
+          >
+
+        <EditText
+            android:id="@+id/giris_editSifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Şifrenizi Giriniz"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+
+
+            />
+      </com.google.android.material.textfield.TextInputLayout>
+
+
+      <Button
+          android:layout_width="250dp"
+          android:layout_height="55dp"
+          android:layout_gravity="center"
+          android:layout_marginTop="30dp"
+          android:background="@drawable/kayit_ol"
+          android:onClick="btnGirisYap"
+          android:text="Giriş yap"
+          android:textAllCaps="false"
+          android:textColor="#1E7197"
+          android:textSize="19sp"
+          android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+ <!-- </LinearLayout> -->
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/giris_yap_kayit_ol"
+        android:onClick="btnGitKayitOl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Kayıt Ol"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    -->
+
+
+</RelativeLayout>

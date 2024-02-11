@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ChatActivity">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/chat_test"
+        android:id="@+id/chat_activity_toolbar"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                app:civ_border_width="3dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                app:civ_border_color="#FFFFFF"
+                android:id="@+id/chat_activity_imgHedefProfil" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="test"
+                android:layout_marginLeft="7dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:layout_alignTop="@+id/chat_activity_imgHedefProfil"
+                android:layout_toRightOf="@+id/chat_activity_imgHedefProfil"
+                android:layout_marginTop="5dp"
+                android:id="@+id/chat_activity_txtHedefIsim"
+
+                 />
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:src="@drawable/ic_close"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:id="@+id/chat_activity_imgKapat"
+                android:onClick="btnChatKapat"
+                android:layout_height="40dp"/>
+
+
+        </RelativeLayout>
+
+        
+        
+    </androidx.appcompat.widget.Toolbar>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/chat_activity_toolbar"
+        android:layout_above="@+id/chat_activity_relaBottom"
+        android:id="@+id/chat_activity_recyclerView"
+        android:layout_marginTop="15dp"
+        android:layout_height="match_parent"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/chat_activity_relaBottom"
+        android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Bir mesaj yazınız"
+            android:id="@+id/chat_activity_editMesaj"
+            android:layout_toRightOf="@+id/chat_activity_imgGaleri"
+            android:layout_toLeftOf="@+id/chat_activity_imgMesajGonder"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="4dp"
+            android:paddingLeft="3dp"
+            />
+
+        <ImageButton
+            android:onClick="btnMesajGonder"
+            android:layout_width="30dp"
+            android:background="@drawable/ic_send"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/chat_activity_imgMesajGonder"
+            android:layout_height="30dp" />
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

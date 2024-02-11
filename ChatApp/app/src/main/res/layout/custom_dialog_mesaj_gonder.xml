@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="490dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/custom_dialog_mesaj_gonder_bg"> <!-- ortaladı -->
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/custom_dialog_mesaj_gonder_mesaj_bg"
+                android:id="@+id/custom_dialog_mesaj_gonder_editMesaj"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:padding="7dp"/><!-- textMultiLine:yazı ortadan başladı yazdıkça yukarı doğru gidiyor
+                android:gravity="top|left" yukarıdan sola doğru hizaladı.
+                -->
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/ic_close"
+                android:padding="15dp"
+                android:background="@drawable/custom_dialog_mesaj_gonder_btn_bg"
+                android:id="@+id/custom_dialog_mesaj_gonder_imgIptal"/>
+
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/custom_dialog_mesaj_gonder_btn_bg"
+                android:id="@+id/custom_dialog_mesaj_gonder_linearGonder">
+
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_message2"
+                    android:background="@drawable/custom_dialog_mesaj_gonder_btn_bg"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Gönder"
+                    android:textColor="@color/MesajGonderBtnYaziRenk"
+                    android:textSize="11sp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="126dp"
+        android:layout_height="126dp"
+        android:layout_centerHorizontal="true"
+        app:civ_border_color="@color/MesajGonderCerceveRenk"
+        app:civ_border_width="3dp"
+        android:id="@+id/custom_dialog_mesaj_gonder_imgKullaniciProfil"
+
+        />    <!-- app:civ_border_width="3dp" çerçeve genişliği 3dp oldu-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/custom_dialog_mesaj_gonder_imgKullaniciProfil"
+        android:id="@+id/custom_dialog_mesaj_gonder_txtKullaniciIsim"
+        android:layout_marginTop="2dp"/>
+
+</RelativeLayout>

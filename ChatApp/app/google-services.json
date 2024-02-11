@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "972258002858",
+    "project_id": "fir-kullanimi-70b84",
+    "storage_bucket": "fir-kullanimi-70b84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972258002858:android:989c793530ace34e7d4dd3",
+        "android_client_info": {
+          "package_name": "com.example.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "972258002858-uudkt5sfu3m4lu4m71cknqrfebq37jam.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkETEEqkSdXgIcNLGRrfU6fYviiQBfWp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "972258002858-uudkt5sfu3m4lu4m71cknqrfebq37jam.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
